@@ -26,15 +26,25 @@ namespace EstacionaFacilAPI.Services
             return vehicle;
         }
 
-        public async Task<Vehicle> RegisterExitAsync(string id)
+        public async Task<Vehicle?> RegisterExitAsync(string id, string userId)
         {
-            var vehicle = await _vehicles.Find(v => v.Id == id).FirstOrDefaultAsync();
-            if (vehicle == null || vehicle.ExitTime != null)
+            var filter = Builders<Vehicle>.Filter.Eq(v => v.Id, id);
+            var update = Builders<Vehicle>.Update
+                .Set(v => v.ExitTime, DateTime.Now)
+                .Set(v => v.ReleasedByUserId, userId);
+
+            var result = await _vehicles.UpdateOneAsync(filter, update);
+
+            if (result.ModifiedCount == 0)
                 return null;
 
-            vehicle.ExitTime = DateTime.Now;
-            await _vehicles.ReplaceOneAsync(v => v.Id == id, vehicle);
-            return vehicle;
+            return await _vehicles.Find(v => v.Id == id).FirstOrDefaultAsync();
+        }
+
+        public async Task<List<Vehicle>> GetActiveVehiclesAsync()
+        {
+            var filter = Builders<Vehicle>.Filter.Eq(v => v.ExitTime, null);
+            return await _vehicles.Find(filter).ToListAsync();
         }
     }
 }

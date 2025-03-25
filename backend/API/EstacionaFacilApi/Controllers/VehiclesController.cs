@@ -39,18 +39,24 @@ namespace EstacionaFacilAPI.Controllers
         [HttpPut("exit/{id}")]
         public async Task<IActionResult> RegisterExit(string id)
         {
-            var result = await _vehicleService.RegisterExitAsync(id);
+            var userId =
+                User.FindFirstValue(JwtRegisteredClaimNames.Sub)
+                ?? User.FindFirstValue(ClaimTypes.NameIdentifier);
+
+            var result = await _vehicleService.RegisterExitAsync(id, userId);
             if (result == null)
                 return NotFound("Veículo não encontrado ou já saiu.");
 
             return Ok(result);
         }
 
+
+
         // 📋 Listar todos os veículos (inclusive os já saíram)
-        [HttpGet]
-        public async Task<IActionResult> GetAll()
+        [HttpGet("active")]
+        public async Task<IActionResult> GetActiveVehicles()
         {
-            var list = await _vehicleService.GetAllAsync();
+            var list = await _vehicleService.GetActiveVehiclesAsync();
             return Ok(list);
         }
     }

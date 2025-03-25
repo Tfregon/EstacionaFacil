@@ -44,6 +44,7 @@ builder.Services.AddAuthentication(options =>
 });
 
 builder.Services.AddAuthorization();
+builder.Services.AddSingleton<DailyCashService>();
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();

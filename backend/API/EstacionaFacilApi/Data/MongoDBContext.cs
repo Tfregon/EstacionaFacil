@@ -14,6 +14,7 @@ namespace EstacionaFacilAPI.Data
             _database = client.GetDatabase(settings.Value.DatabaseName);
         }
 
+        public IMongoCollection<DailyCash> DailyCash => _database.GetCollection<DailyCash>("DailyCash");
         public IMongoCollection<User> Users => _database.GetCollection<User>("Users");
         public IMongoCollection<Vehicle> Vehicles => _database.GetCollection<Vehicle>("Vehicles");
     }

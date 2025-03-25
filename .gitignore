@@ -1,0 +1,9 @@
+# Ignorar toda a pasta .vs
+.vs/
+
+# Ignorar arquivos de log
+*.log
+
+# Ignorar diretórios de compilação
+bin/
+obj/

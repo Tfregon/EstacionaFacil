@@ -32,8 +32,7 @@ export class DashboardService {
     });
   }
   
-   
-
+  
   // 💰 Obter valor do caixa diário (caso precise exibir depois)
   getCashToday() {
     return this.http.get(`${this.apiUrl}/Cash/today`, {

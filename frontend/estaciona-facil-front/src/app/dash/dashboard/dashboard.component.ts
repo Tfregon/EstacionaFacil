@@ -3,12 +3,12 @@ import { CommonModule } from '@angular/common';
 import { DashboardService } from '../../services/dashboard.service';
 import { Router } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
-import { FormsModule } from '@angular/forms'; // 👈 importar
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-dashboard',
   standalone: true,
-  imports: [CommonModule, FormsModule], // 👈 adicionar aqui
+  imports: [CommonModule, FormsModule],
   templateUrl: './dashboard.component.html',
   styleUrl: './dashboard.component.css'
 })
@@ -16,7 +16,7 @@ import { FormsModule } from '@angular/forms'; // 👈 importar
 export class DashboardComponent implements OnInit {
   vehicles: any[] = [];
 
-  // 👇 Armazena os dados do novo veículo a ser registrado
+  // Dados do novo veículo
   novoVeiculo = {
     plate: '',
     model: '',
@@ -24,12 +24,16 @@ export class DashboardComponent implements OnInit {
     ownerName: ''
   };
 
-  // 👇 Controla se o formulário de registro está visível
+
   exibirFormulario = false;
+
+  // 💰 Caixa diário
+  cashToday: number | null = null;
+  mostrarCaixa = false;
 
   constructor(
     private dashboardService: DashboardService,
-    private router: Router,
+    public router: Router,
     private http: HttpClient
   ) {}
 
@@ -37,7 +41,6 @@ export class DashboardComponent implements OnInit {
     this.carregarVeiculos();
   }
 
-  // 🔄 Busca veículos ativos do backend
   carregarVeiculos() {
     this.dashboardService.getActiveVehicles().subscribe({
       next: (data: any) => this.vehicles = data,
@@ -45,21 +48,17 @@ export class DashboardComponent implements OnInit {
     });
   }
 
-  // 👉 Exibe o formulário de registro
   abrirFormulario() {
     this.exibirFormulario = true;
   }
 
-  // ❌ Fecha o formulário sem registrar
   fecharFormulario() {
     this.exibirFormulario = false;
   }
 
-  // ✅ Registra o novo veículo no backend
   registrarEntrada() {
     const { plate, model, color, ownerName } = this.novoVeiculo;
 
-    // ⚠️ Verifica se todos os campos estão preenchidos
     if (!plate || !model || !color || !ownerName) {
       alert('Preencha todos os campos antes de registrar.');
       return;
@@ -69,9 +68,9 @@ export class DashboardComponent implements OnInit {
       .subscribe({
         next: () => {
           alert('Veículo registrado com sucesso!');
-          this.novoVeiculo = { plate: '', model: '', color: '', ownerName: '' }; // 🔄 limpa campos
-          this.carregarVeiculos(); // 🔃 recarrega a lista
-          this.fecharFormulario(); // ❌ fecha formulário
+          this.novoVeiculo = { plate: '', model: '', color: '', ownerName: '' };
+          this.carregarVeiculos();
+          this.fecharFormulario();
         },
         error: (err) => {
           console.error('Erro ao registrar entrada:', err);
@@ -80,10 +79,8 @@ export class DashboardComponent implements OnInit {
       });
   }
 
-  // 🏁 Confirma saída do veículo
   registrarSaida(vehicleId: string) {
     const valorInput = window.prompt('Informe o valor adicional a ser cobrado (em dólares):', '0');
-
     if (valorInput === null) return;
 
     const valorAdicional = parseFloat(valorInput);
@@ -108,17 +105,97 @@ export class DashboardComponent implements OnInit {
       });
   }
 
-  // 💰 Navega para tela de caixa
-  verCaixa() {
-    this.router.navigate(['/cash']);
+  // 💰 Carrega o caixa de hoje e exibe na tela
+  carregarCaixaHoje() {
+    this.http.get<any>('https://localhost:7105/api/Cash/today').subscribe({
+      next: (res) => {
+        this.cashToday = res.total;
+        this.mostrarCaixa = true;
+      },
+      error: (err) => {
+        console.error('Erro ao carregar caixa do dia:', err);
+        alert('Erro ao carregar caixa do dia');
+      }
+    });
   }
 
-  // 📜 Navega para tela de histórico
+  verCaixa() {
+    this.carregarCaixaHoje();
+  }
+
+  // adicione no início
+  filtroData: string = '';
+  valorCaixa: number | null = null;
+
+  buscarCaixaPorData() {
+    if (!this.filtroData) {
+      alert('Selecione uma data para filtrar.');
+      return;
+    }
+
+    const dataFormatada = new Date(this.filtroData).toISOString().split('T')[0]; // yyyy-mm-dd
+
+    this.http.get<any>(`https://localhost:7105/api/Cash/${dataFormatada}`)
+      .subscribe({
+        next: (res) => {
+          this.valorCaixa = res.total;
+        },
+        error: (err) => {
+          console.error('Erro ao buscar caixa por data:', err);
+          alert('Erro ao buscar caixa.');
+        }
+      });
+  }
+
+  
   verHistorico() {
     this.router.navigate(['/history']);
   }
 
-  // 🔄 Recarrega a lista
+  sistemaStatus: any = null;
+  mostrarStatus = false;
+
+  sistemaVersao: any = null;
+  mostrarVersao = false;
+
+  // 🔧 Carrega status rápido do sistema
+  carregarStatusSistema() {
+    this.http.get<any>('https://localhost:7105/api/Settings/status').subscribe({
+      next: (res) => {
+        this.sistemaStatus = res;
+        this.mostrarStatus = true;
+      },
+      error: (err) => {
+        console.error('Erro ao buscar status:', err);
+        alert('Erro ao buscar status.');
+      }
+    });
+  }
+
+  // 📦 Carrega info de versão do sistema
+  carregarVersaoSistema() {
+    this.http.get<any>('https://localhost:7105/api/Settings/version').subscribe({
+      next: (res) => {
+        this.sistemaVersao = res;
+        this.mostrarVersao = true;
+      },
+      error: (err) => {
+        console.error('Erro ao buscar versão:', err);
+        alert('Erro ao buscar versão.');
+      }
+    });
+  }
+
+  // ❌ Oculta
+  fecharStatus() {
+    this.mostrarStatus = false;
+  }
+
+  fecharVersao() {
+    this.mostrarVersao = false;
+  }
+
+
   atualizar() {
     this.carregarVeiculos();
   }

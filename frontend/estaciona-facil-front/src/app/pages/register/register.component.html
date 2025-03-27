@@ -1,0 +1,25 @@
+<div class="register-container">
+    <h2>Registrar Novo Funcionário</h2>
+    <form (ngSubmit)="register()">
+      <label>Nome:</label>
+      <input type="text" [(ngModel)]="name" name="name" required />
+  
+      <label>Username:</label>
+      <input type="text" [(ngModel)]="username" name="username" required />
+  
+      <label>Senha:</label>
+      <input type="password" [(ngModel)]="password" name="password" required />
+  
+      <label>Confirmar Senha:</label>
+      <input type="password" [(ngModel)]="confirmPassword" name="confirmPassword" required />
+  
+      <div *ngIf="errorMessage" class="error">{{ errorMessage }}</div>
+  
+      <div class="form-buttons">
+        <button type="submit">Registrar</button>
+        <button type="button" (click)="voltarAoDashboard()">⬅ Voltar ao Dashboard</button>
+      </div>
+      
+    </form>
+  </div>
+  

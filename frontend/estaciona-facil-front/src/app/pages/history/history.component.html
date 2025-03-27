@@ -1,0 +1,32 @@
+<div class="history-container">
+    <h2>📜 Histórico de Veículos</h2>
+    <p>Total de veículos: <strong>{{ totalVeiculos }}</strong></p>
+  
+    <table>
+      <thead>
+        <tr>
+          <th>Placa</th>
+          <th>Modelo</th>
+          <th>Cor</th>
+          <th>Proprietário</th>
+          <th>Entrada</th>
+          <th>Saída</th>
+          <th>Atendido Por</th>
+          <th>Valor Pago</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let v of historico">
+          <td>{{ v.plate }}</td>
+          <td>{{ v.model }}</td>
+          <td>{{ v.color }}</td>
+          <td>{{ v.ownerName }}</td>
+          <td>{{ v.entryTime | date:'short' }}</td>
+          <td>{{ v.exitTime ? (v.exitTime | date:'short') : '—' }}</td>
+          <td>{{ v.attendedByUserName || '—' }}</td>
+          <td>{{ v.amountPaid ? ('$' + v.amountPaid.toFixed(2)) : '—' }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

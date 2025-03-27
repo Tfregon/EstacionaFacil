@@ -9,6 +9,10 @@ export const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
   {
+    path: 'history',
+    loadComponent: () => import('./pages/history/history.component').then(m => m.HistoryComponent)
+  },  
+  {
     path: 'dashboard',
     canActivate: [authGuard],
     loadComponent: () => import('./dash/dashboard/dashboard.component').then(m => m.DashboardComponent)

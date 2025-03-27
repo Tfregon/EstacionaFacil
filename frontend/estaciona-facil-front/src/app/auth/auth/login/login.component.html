@@ -1,6 +1,27 @@
-<form (ngSubmit)="login()">
-  <input type="text" [(ngModel)]="username" name="username" required placeholder="Usuário" />
-  <input type="password" [(ngModel)]="password" name="password" required placeholder="Senha" />
-  <button type="submit">Entrar</button>
-  <p *ngIf="errorMessage" class="error">{{ errorMessage }}</p>
-</form>
+<div class="login-container">
+  <h2>🔐 Login</h2>
+
+  <form (ngSubmit)="login()" #loginForm="ngForm">
+    <label for="username">Usuário</label>
+    <input
+      type="text"
+      id="username"
+      name="username"
+      [(ngModel)]="username"
+      required
+    />
+
+    <label for="password">Senha</label>
+    <input
+      type="password"
+      id="password"
+      name="password"
+      [(ngModel)]="password"
+      required
+    />
+
+    <button type="submit" [disabled]="loginForm.invalid">Entrar</button>
+
+    <p class="error" *ngIf="errorMessage">{{ errorMessage }}</p>
+  </form>
+</div>

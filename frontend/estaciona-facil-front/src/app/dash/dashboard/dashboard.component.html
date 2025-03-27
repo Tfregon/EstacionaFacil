@@ -1,6 +1,53 @@
-<h2>Veículos Ativos</h2>
-<ul>
-  <li *ngFor="let v of vehicles">
-    {{ v.plate }} - {{ v.model }} - {{ v.ownerName }}
-  </li>
-</ul>
+<div class="dashboard-container">
+  <h2>🚗 Veículos Ativos</h2>
+
+  <!-- Botões de ação -->
+  <div class="controls">
+    <button (click)="verCaixa()">💰 Ver Caixa</button>
+    <button (click)="verHistorico()">📜 Ver Histórico</button>
+    <button (click)="atualizar()">🔄 Atualizar</button>
+    <button (click)="abrirFormulario()">➕ Adicionar Veículo</button>
+  </div>
+
+  <!-- 🧾 Formulário para adicionar novo veículo -->
+  <div *ngIf="exibirFormulario" class="formulario-container">
+    <h3>Novo Veículo</h3>
+    <form (ngSubmit)="registrarEntrada()" #formulario="ngForm">
+      <input type="text" [(ngModel)]="novoVeiculo.plate" name="plate" placeholder="Placa" required />
+      <input type="text" [(ngModel)]="novoVeiculo.model" name="model" placeholder="Modelo" required />
+      <input type="text" [(ngModel)]="novoVeiculo.color" name="color" placeholder="Cor" required />
+      <input type="text" [(ngModel)]="novoVeiculo.ownerName" name="ownerName" placeholder="Proprietário" required />
+
+      <div class="form-buttons">
+        <button type="submit">Registrar</button>
+        <button type="button" (click)="fecharFormulario()">Cancelar</button>
+      </div>
+    </form>
+  </div>
+
+  <!-- Tabela com veículos ativos -->
+  <table>
+    <thead>
+      <tr>
+        <th>Placa</th>
+        <th>Modelo</th>
+        <th>Cor</th>
+        <th>Proprietário</th>
+        <th>Entrada</th>
+        <th>Ações</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let v of vehicles">
+        <td>{{ v.plate }}</td>
+        <td>{{ v.model }}</td>
+        <td>{{ v.color }}</td>
+        <td>{{ v.ownerName }}</td>
+        <td>{{ v.entryTime | date:'short' }}</td>
+        <td>
+          <button (click)="registrarSaida(v.id)">Registrar Saída</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

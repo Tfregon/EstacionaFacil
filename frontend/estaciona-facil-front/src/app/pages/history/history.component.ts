@@ -16,7 +16,7 @@ export class HistoryComponent implements OnInit {
   constructor(private http: HttpClient) {}
 
   ngOnInit(): void {
-    this.http.get<any[]>('https://localhost:7105/api/Vehicles').subscribe({
+    this.http.get<any[]>('estacionafacilapi20250404165631.azurewebsites.net/api/Vehicles').subscribe({
       next: (res) => {
         this.historico = res;
         this.totalVeiculos = res.length;

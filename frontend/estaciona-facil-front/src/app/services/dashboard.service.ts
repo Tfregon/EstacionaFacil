@@ -6,7 +6,7 @@ import { AuthService } from '../auth/auth.service';
   providedIn: 'root'
 })
 export class DashboardService {
-  private apiUrl = 'https://localhost:7105/api';
+  private apiUrl = 'estacionafacilapi20250404165631.azurewebsites.net/api';
 
   constructor(private http: HttpClient, private auth: AuthService) {}
 

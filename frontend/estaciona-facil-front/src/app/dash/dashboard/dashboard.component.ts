@@ -64,7 +64,7 @@ export class DashboardComponent implements OnInit {
       return;
     }
 
-    this.http.post('https://localhost:7105/api/Vehicles/entry', this.novoVeiculo)
+    this.http.post('https://estacionafacilapi20250404165631.azurewebsites.net/api/Vehicles/entry', this.novoVeiculo)
       .subscribe({
         next: () => {
           alert('Veículo registrado com sucesso!');
@@ -92,7 +92,7 @@ export class DashboardComponent implements OnInit {
     const confirmar = window.confirm(`Deseja confirmar a saída com valor adicional de $${valorAdicional.toFixed(2)}?`);
     if (!confirmar) return;
 
-    this.http.put(`https://localhost:7105/api/Vehicles/exit/${vehicleId}`, valorAdicional)
+    this.http.put(`https://estacionafacilapi20250404165631.azurewebsites.net/api//Vehicles/exit/${vehicleId}`, valorAdicional)
       .subscribe({
         next: () => {
           alert('Saída registrada com sucesso!');
@@ -107,7 +107,7 @@ export class DashboardComponent implements OnInit {
 
   // 💰 Carrega o caixa de hoje e exibe na tela
   carregarCaixaHoje() {
-    this.http.get<any>('https://localhost:7105/api/Cash/today').subscribe({
+    this.http.get<any>('https://estacionafacilapi20250404165631.azurewebsites.net/api/api/Cash/today').subscribe({
       next: (res) => {
         this.cashToday = res.total;
         this.mostrarCaixa = true;

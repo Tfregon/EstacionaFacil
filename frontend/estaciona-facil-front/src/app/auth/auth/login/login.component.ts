@@ -18,7 +18,7 @@ export class LoginComponent {
   constructor(private authService: AuthService, private router: Router) {}
 
   login() {
-    this.authService.login({ username: this.username, password: this.password }).subscribe({
+    this.authService.login({ username: this.username, password: this.password }, "https://estacionafacilapi20250404165631.azurewebsites.net/api/Users").subscribe({
       next: (res: any) => {
         localStorage.setItem('token', res.token); // ✅ guarda o token localmente
         this.router.navigate(['/dashboard']); // ✅ redireciona após login

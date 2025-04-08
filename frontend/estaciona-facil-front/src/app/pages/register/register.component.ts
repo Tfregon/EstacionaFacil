@@ -33,7 +33,7 @@ export class RegisterComponent {
       password: this.password
     };
 
-    this.http.post('estacionafacilapi20250404165631.azurewebsites.net/api/Users/register', newUser).subscribe({
+    this.http.post('https://estacionafacilapi20250404165631.azurewebsites.net/api/Users/register', newUser).subscribe({
       next: () => {
         alert('Funcionário registrado com sucesso!');
         this.router.navigate(['/dashboard']);

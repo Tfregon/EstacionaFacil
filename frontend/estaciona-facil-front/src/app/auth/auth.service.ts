@@ -14,8 +14,8 @@ export class AuthService {
   constructor(private http: HttpClient, private router: Router) {}
 
   // 🔐 Login e salvamento do token
-  login(credentials: { username: string; password: string }) {
-    return this.http.post<{ token: string }>(`${this.apiUrl}/login`, credentials)
+  login(credentials: { username: string; password: string }, apiUrl: string) {
+    return this.http.post<{ token: string }>(`${apiUrl}/login`, credentials)
       .pipe(
         tap(response => {
           console.log(response)

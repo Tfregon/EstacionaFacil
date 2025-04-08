@@ -135,7 +135,7 @@ export class DashboardComponent implements OnInit {
 
     const dataFormatada = new Date(this.filtroData).toISOString().split('T')[0]; // yyyy-mm-dd
 
-    this.http.get<any>(`https://localhost:7105/api/Cash/${dataFormatada}`)
+    this.http.get<any>(`https://estacionafacilapi20250404165631.azurewebsites.net/api/Cash/${dataFormatada}`)
       .subscribe({
         next: (res) => {
           this.valorCaixa = res.total;
@@ -160,7 +160,7 @@ export class DashboardComponent implements OnInit {
 
   // 🔧 Carrega status rápido do sistema
   carregarStatusSistema() {
-    this.http.get<any>('https://localhost:7105/api/Settings/status').subscribe({
+    this.http.get<any>('https://estacionafacilapi20250404165631.azurewebsites.net/api/Settings/status').subscribe({
       next: (res) => {
         this.sistemaStatus = res;
         this.mostrarStatus = true;
@@ -174,7 +174,7 @@ export class DashboardComponent implements OnInit {
 
   // 📦 Carrega info de versão do sistema
   carregarVersaoSistema() {
-    this.http.get<any>('https://localhost:7105/api/Settings/version').subscribe({
+    this.http.get<any>('https://estacionafacilapi20250404165631.azurewebsites.net/api/Settings/version').subscribe({
       next: (res) => {
         this.sistemaVersao = res;
         this.mostrarVersao = true;

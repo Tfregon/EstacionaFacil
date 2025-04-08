@@ -1,0 +1,379 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Thomas\\Desktop\\estacionafacil\\backend\\API\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2B2E8848-58ED-4968-AFB8-1EE5AB46218B}|EstacionaFacilApi\\EstacionaFacilApi.csproj|c:\\users\\thomas\\desktop\\estacionafacil\\backend\\api\\estacionafacilapi\\controllers\\settingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B2E8848-58ED-4968-AFB8-1EE5AB46218B}|EstacionaFacilApi\\EstacionaFacilApi.csproj|solutionrelative:estacionafacilapi\\controllers\\settingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B2E8848-58ED-4968-AFB8-1EE5AB46218B}|EstacionaFacilApi\\EstacionaFacilApi.csproj|c:\\users\\thomas\\desktop\\estacionafacil\\backend\\api\\estacionafacilapi\\controllers\\vehiclescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B2E8848-58ED-4968-AFB8-1EE5AB46218B}|EstacionaFacilApi\\EstacionaFacilApi.csproj|solutionrelative:estacionafacilapi\\controllers\\vehiclescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B2E8848-58ED-4968-AFB8-1EE5AB46218B}|EstacionaFacilApi\\EstacionaFacilApi.csproj|c:\\users\\thomas\\desktop\\estacionafacil\\backend\\api\\estacionafacilapi\\helpers\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B2E8848-58ED-4968-AFB8-1EE5AB46218B}|EstacionaFacilApi\\EstacionaFacilApi.csproj|solutionrelative:estacionafacilapi\\helpers\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B2E8848-58ED-4968-AFB8-1EE5AB46218B}|EstacionaFacilApi\\EstacionaFacilApi.csproj|c:\\users\\thomas\\desktop\\estacionafacil\\backend\\api\\estacionafacilapi\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B2E8848-58ED-4968-AFB8-1EE5AB46218B}|EstacionaFacilApi\\EstacionaFacilApi.csproj|solutionrelative:estacionafacilapi\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B2E8848-58ED-4968-AFB8-1EE5AB46218B}|EstacionaFacilApi\\EstacionaFacilApi.csproj|c:\\users\\thomas\\desktop\\estacionafacil\\backend\\api\\estacionafacilapi\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B2E8848-58ED-4968-AFB8-1EE5AB46218B}|EstacionaFacilApi\\EstacionaFacilApi.csproj|solutionrelative:estacionafacilapi\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B2E8848-58ED-4968-AFB8-1EE5AB46218B}|EstacionaFacilApi\\EstacionaFacilApi.csproj|c:\\users\\thomas\\desktop\\estacionafacil\\backend\\api\\estacionafacilapi\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B2E8848-58ED-4968-AFB8-1EE5AB46218B}|EstacionaFacilApi\\EstacionaFacilApi.csproj|solutionrelative:estacionafacilapi\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B2E8848-58ED-4968-AFB8-1EE5AB46218B}|EstacionaFacilApi\\EstacionaFacilApi.csproj|c:\\users\\thomas\\desktop\\estacionafacil\\backend\\api\\estacionafacilapi\\data\\mongodbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B2E8848-58ED-4968-AFB8-1EE5AB46218B}|EstacionaFacilApi\\EstacionaFacilApi.csproj|solutionrelative:estacionafacilapi\\data\\mongodbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B2E8848-58ED-4968-AFB8-1EE5AB46218B}|EstacionaFacilApi\\EstacionaFacilApi.csproj|c:\\users\\thomas\\desktop\\estacionafacil\\backend\\api\\estacionafacilapi\\services\\dailycashservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B2E8848-58ED-4968-AFB8-1EE5AB46218B}|EstacionaFacilApi\\EstacionaFacilApi.csproj|solutionrelative:estacionafacilapi\\services\\dailycashservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B2E8848-58ED-4968-AFB8-1EE5AB46218B}|EstacionaFacilApi\\EstacionaFacilApi.csproj|c:\\users\\thomas\\desktop\\estacionafacil\\backend\\api\\estacionafacilapi\\models\\vehicle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B2E8848-58ED-4968-AFB8-1EE5AB46218B}|EstacionaFacilApi\\EstacionaFacilApi.csproj|solutionrelative:estacionafacilapi\\models\\vehicle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B2E8848-58ED-4968-AFB8-1EE5AB46218B}|EstacionaFacilApi\\EstacionaFacilApi.csproj|c:\\users\\thomas\\desktop\\estacionafacil\\backend\\api\\estacionafacilapi\\services\\vehicleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B2E8848-58ED-4968-AFB8-1EE5AB46218B}|EstacionaFacilApi\\EstacionaFacilApi.csproj|solutionrelative:estacionafacilapi\\services\\vehicleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B2E8848-58ED-4968-AFB8-1EE5AB46218B}|EstacionaFacilApi\\EstacionaFacilApi.csproj|c:\\users\\thomas\\desktop\\estacionafacil\\backend\\api\\estacionafacilapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B2E8848-58ED-4968-AFB8-1EE5AB46218B}|EstacionaFacilApi\\EstacionaFacilApi.csproj|solutionrelative:estacionafacilapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B2E8848-58ED-4968-AFB8-1EE5AB46218B}|EstacionaFacilApi\\EstacionaFacilApi.csproj|c:\\users\\thomas\\desktop\\estacionafacil\\backend\\api\\estacionafacilapi\\models\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B2E8848-58ED-4968-AFB8-1EE5AB46218B}|EstacionaFacilApi\\EstacionaFacilApi.csproj|solutionrelative:estacionafacilapi\\models\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B2E8848-58ED-4968-AFB8-1EE5AB46218B}|EstacionaFacilApi\\EstacionaFacilApi.csproj|c:\\users\\thomas\\desktop\\estacionafacil\\backend\\api\\estacionafacilapi\\controllers\\cashcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2B2E8848-58ED-4968-AFB8-1EE5AB46218B}|EstacionaFacilApi\\EstacionaFacilApi.csproj|solutionrelative:estacionafacilapi\\controllers\\cashcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B2E8848-58ED-4968-AFB8-1EE5AB46218B}|EstacionaFacilApi\\EstacionaFacilApi.csproj|c:\\users\\thomas\\desktop\\estacionafacil\\backend\\api\\estacionafacilapi\\estacionafacilapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{2B2E8848-58ED-4968-AFB8-1EE5AB46218B}|EstacionaFacilApi\\EstacionaFacilApi.csproj|solutionrelative:estacionafacilapi\\estacionafacilapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2B2E8848-58ED-4968-AFB8-1EE5AB46218B}|EstacionaFacilApi\\EstacionaFacilApi.csproj|c:\\users\\thomas\\desktop\\estacionafacil\\backend\\api\\estacionafacilapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{2B2E8848-58ED-4968-AFB8-1EE5AB46218B}|EstacionaFacilApi\\EstacionaFacilApi.csproj|solutionrelative:estacionafacilapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 23,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{873151d0-cf2e-48cc-b4bf-ad0394f6a3c3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1294007299:0:{83107a3e-496a-485e-b455-16ddb978e55e}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1387419606:0:{bf84ea66-d821-4dba-b1b1-2777d8574775}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{f5cd1b51-c771-5648-966f-646d419b1e7c}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:2:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:3:0:{57d563b6-44a5-47df-85be-f4199ad6b651}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{fbcae063-e2c0-4ab1-a516-996ea3dafb72}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Vehicle.cs",
+              "DocumentMoniker": "C:\\Users\\Thomas\\Desktop\\estacionafacil\\backend\\API\\EstacionaFacilApi\\Models\\Vehicle.cs",
+              "RelativeDocumentMoniker": "EstacionaFacilApi\\Models\\Vehicle.cs",
+              "ToolTip": "C:\\Users\\Thomas\\Desktop\\estacionafacil\\backend\\API\\EstacionaFacilApi\\Models\\Vehicle.cs",
+              "RelativeToolTip": "EstacionaFacilApi\\Models\\Vehicle.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T14:41:40.102Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MongoDBContext.cs",
+              "DocumentMoniker": "C:\\Users\\Thomas\\Desktop\\estacionafacil\\backend\\API\\EstacionaFacilApi\\Data\\MongoDBContext.cs",
+              "RelativeDocumentMoniker": "EstacionaFacilApi\\Data\\MongoDBContext.cs",
+              "ToolTip": "C:\\Users\\Thomas\\Desktop\\estacionafacil\\backend\\API\\EstacionaFacilApi\\Data\\MongoDBContext.cs",
+              "RelativeToolTip": "EstacionaFacilApi\\Data\\MongoDBContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T15:11:23.071Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "C:\\Users\\Thomas\\Desktop\\estacionafacil\\backend\\API\\EstacionaFacilApi\\Controllers\\UsersController.cs",
+              "RelativeDocumentMoniker": "EstacionaFacilApi\\Controllers\\UsersController.cs",
+              "ToolTip": "C:\\Users\\Thomas\\Desktop\\estacionafacil\\backend\\API\\EstacionaFacilApi\\Controllers\\UsersController.cs",
+              "RelativeToolTip": "EstacionaFacilApi\\Controllers\\UsersController.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAYwA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T16:43:36.642Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "VehiclesController.cs",
+              "DocumentMoniker": "C:\\Users\\Thomas\\Desktop\\estacionafacil\\backend\\API\\EstacionaFacilApi\\Controllers\\VehiclesController.cs",
+              "RelativeDocumentMoniker": "EstacionaFacilApi\\Controllers\\VehiclesController.cs",
+              "ToolTip": "C:\\Users\\Thomas\\Desktop\\estacionafacil\\backend\\API\\EstacionaFacilApi\\Controllers\\VehiclesController.cs",
+              "RelativeToolTip": "EstacionaFacilApi\\Controllers\\VehiclesController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACkAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T17:09:32.125Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\Thomas\\Desktop\\estacionafacil\\backend\\API\\EstacionaFacilApi\\Models\\User.cs",
+              "RelativeDocumentMoniker": "EstacionaFacilApi\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\Thomas\\Desktop\\estacionafacil\\backend\\API\\EstacionaFacilApi\\Models\\User.cs",
+              "RelativeToolTip": "EstacionaFacilApi\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T14:41:53.295Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SettingsController.cs",
+              "DocumentMoniker": "C:\\Users\\Thomas\\Desktop\\estacionafacil\\backend\\API\\EstacionaFacilApi\\Controllers\\SettingsController.cs",
+              "RelativeDocumentMoniker": "EstacionaFacilApi\\Controllers\\SettingsController.cs",
+              "ToolTip": "C:\\Users\\Thomas\\Desktop\\estacionafacil\\backend\\API\\EstacionaFacilApi\\Controllers\\SettingsController.cs",
+              "RelativeToolTip": "EstacionaFacilApi\\Controllers\\SettingsController.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAmwA4AAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-27T23:22:41.109Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "JwtService.cs",
+              "DocumentMoniker": "C:\\Users\\Thomas\\Desktop\\estacionafacil\\backend\\API\\EstacionaFacilApi\\Helpers\\JwtService.cs",
+              "RelativeDocumentMoniker": "EstacionaFacilApi\\Helpers\\JwtService.cs",
+              "ToolTip": "C:\\Users\\Thomas\\Desktop\\estacionafacil\\backend\\API\\EstacionaFacilApi\\Helpers\\JwtService.cs",
+              "RelativeToolTip": "EstacionaFacilApi\\Helpers\\JwtService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T15:13:14.199Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\Thomas\\Desktop\\estacionafacil\\backend\\API\\EstacionaFacilApi\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "EstacionaFacilApi\\Services\\UserService.cs",
+              "ToolTip": "C:\\Users\\Thomas\\Desktop\\estacionafacil\\backend\\API\\EstacionaFacilApi\\Services\\UserService.cs",
+              "RelativeToolTip": "EstacionaFacilApi\\Services\\UserService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T15:08:35.797Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DailyCashService.cs",
+              "DocumentMoniker": "C:\\Users\\Thomas\\Desktop\\estacionafacil\\backend\\API\\EstacionaFacilApi\\Services\\DailyCashService.cs",
+              "RelativeDocumentMoniker": "EstacionaFacilApi\\Services\\DailyCashService.cs",
+              "ToolTip": "C:\\Users\\Thomas\\Desktop\\estacionafacil\\backend\\API\\EstacionaFacilApi\\Services\\DailyCashService.cs",
+              "RelativeToolTip": "EstacionaFacilApi\\Services\\DailyCashService.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAYwCIAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-01T12:00:34.838Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "LoginRequest.cs",
+              "DocumentMoniker": "C:\\Users\\Thomas\\Desktop\\estacionafacil\\backend\\API\\EstacionaFacilApi\\Models\\LoginRequest.cs",
+              "RelativeDocumentMoniker": "EstacionaFacilApi\\Models\\LoginRequest.cs",
+              "ToolTip": "C:\\Users\\Thomas\\Desktop\\estacionafacil\\backend\\API\\EstacionaFacilApi\\Models\\LoginRequest.cs",
+              "RelativeToolTip": "EstacionaFacilApi\\Models\\LoginRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T14:42:08.161Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Thomas\\Desktop\\estacionafacil\\backend\\API\\EstacionaFacilApi\\Program.cs",
+              "RelativeDocumentMoniker": "EstacionaFacilApi\\Program.cs",
+              "ToolTip": "C:\\Users\\Thomas\\Desktop\\estacionafacil\\backend\\API\\EstacionaFacilApi\\Program.cs",
+              "RelativeToolTip": "EstacionaFacilApi\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T15:09:15.254Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "VehicleService.cs",
+              "DocumentMoniker": "C:\\Users\\Thomas\\Desktop\\estacionafacil\\backend\\API\\EstacionaFacilApi\\Services\\VehicleService.cs",
+              "RelativeDocumentMoniker": "EstacionaFacilApi\\Services\\VehicleService.cs",
+              "ToolTip": "C:\\Users\\Thomas\\Desktop\\estacionafacil\\backend\\API\\EstacionaFacilApi\\Services\\VehicleService.cs",
+              "RelativeToolTip": "EstacionaFacilApi\\Services\\VehicleService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-25T17:07:47.406Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CashController.cs",
+              "DocumentMoniker": "C:\\Users\\Thomas\\Desktop\\estacionafacil\\backend\\API\\EstacionaFacilApi\\Controllers\\CashController.cs",
+              "RelativeDocumentMoniker": "EstacionaFacilApi\\Controllers\\CashController.cs",
+              "ToolTip": "C:\\Users\\Thomas\\Desktop\\estacionafacil\\backend\\API\\EstacionaFacilApi\\Controllers\\CashController.cs",
+              "RelativeToolTip": "EstacionaFacilApi\\Controllers\\CashController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-27T22:35:06.308Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Thomas\\Desktop\\estacionafacil\\backend\\API\\EstacionaFacilApi\\appsettings.json",
+              "RelativeDocumentMoniker": "EstacionaFacilApi\\appsettings.json",
+              "ToolTip": "C:\\Users\\Thomas\\Desktop\\estacionafacil\\backend\\API\\EstacionaFacilApi\\appsettings.json",
+              "RelativeToolTip": "EstacionaFacilApi\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-25T15:04:04.698Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "EstacionaFacilApi.http",
+              "DocumentMoniker": "C:\\Users\\Thomas\\Desktop\\estacionafacil\\backend\\API\\EstacionaFacilApi\\EstacionaFacilApi.http",
+              "RelativeDocumentMoniker": "EstacionaFacilApi\\EstacionaFacilApi.http",
+              "ToolTip": "C:\\Users\\Thomas\\Desktop\\estacionafacil\\backend\\API\\EstacionaFacilApi\\EstacionaFacilApi.http",
+              "RelativeToolTip": "EstacionaFacilApi\\EstacionaFacilApi.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-03-25T15:38:23.902Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{a80febb4-e7e0-4147-b476-21aaf2453969}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{004be353-6879-467c-9d1e-9ac23cdf6d49}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{4a9b7e51-aa16-11d0-a8c5-00a0c921a4d2}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

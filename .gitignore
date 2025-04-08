@@ -1,43 +1,28 @@
-# See https://docs.github.com/get-started/getting-started-with-git/ignoring-files for more about ignoring files.
-.vs/
+# Diretórios de node_modules
+node_modules/
 
-# Compiled output
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 
-/tmp
-/out-tsc
-/bazel-out
+# Diretório de saída de compilação
 
-# Node
-/node_modules
-npm-debug.log
-yarn-error.log
-
-# IDEs and editors
+# Arquivos específicos do sistema de IDE/editor
+.vscode/
 .idea/
-.project
-.classpath
-.c9/
-*.launch
-.settings/
 *.sublime-workspace
+.history/
 
-# Visual Studio Code
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-.history/*
+# Arquivos temporários
+temp/
+tmp/
 
-# Miscellaneous
-/.angular/cache
-.sass-cache/
-/connect.lock
-/coverage
-/libpeerconnection.log
-testem.log
-/typings
+# Arquivos de configuração sensíveis
+.env
 
-# System files
-.DS_Store
-Thumbs.db
+# Pasta bin e obj do .NET
+**/bin/
+**/obj/

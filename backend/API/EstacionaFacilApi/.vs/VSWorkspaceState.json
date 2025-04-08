@@ -1,0 +1,14 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Controllers",
+    "\\Data",
+    "\\Helpers",
+    "\\Models",
+    "\\obj",
+    "\\Properties",
+    "\\Services"
+  ],
+  "SelectedNode": "\\Models\\LoginRequest.cs",
+  "PreviewInSolutionExplorer": false
+}

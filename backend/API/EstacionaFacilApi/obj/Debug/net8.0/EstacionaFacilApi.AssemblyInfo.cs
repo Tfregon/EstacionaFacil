@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("EstacionaFacilApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6e89a00c967c9b9574ed8c810b3d7115907d4a4d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0528c8a1d645257c826044cd9ba789a98a94796f")]
 [assembly: System.Reflection.AssemblyProductAttribute("EstacionaFacilApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("EstacionaFacilApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

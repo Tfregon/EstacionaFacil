@@ -9,7 +9,7 @@ import { tap } from 'rxjs/operators';
   providedIn: 'root'
 })
 export class AuthService {
-  private apiUrl = 'estacionafacilapi20250404165631.azurewebsites.net/api';
+  private apiUrl = 'https://estacionafacilapi20250404165631.azurewebsites.net/api';
 
   constructor(private http: HttpClient, private router: Router) {}
 
